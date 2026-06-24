@@ -1,11 +1,10 @@
-# T02 Single-Page-Application for Festival Organization (Web-Technologien)
+# T02 Single-Page-Application for Festival Organization (Web Technologies)
 
-Authors: Alice Alferink & Emilia Kistowski
+## Context
+This project was developed as the second milestone within the "Web Technologies" module at my university. The objective was to transition from static web pages to a dynamic Single-Page-Application (SPA). The focus was on implementing client-side logic using JavaScript, handling API requests (fetching data), and manipulating the DOM to create an interactive user experience.
 
 ## Description
-The Website is a simple web application that aims to help with the organization of the festival "Rock am See".
-On top of the site a countdown shows the time left until the festival starts. Three further sections display information, events and a list of helpers, who have registered to volunteer at one of the events. Via a dropdown menu the list of helpers can be sorted by name or registration date, in descending or ascending order. On top of the page there is a fixed navigation bar, that enables the user to jump to all three sections of the site quickly. During loading of the helpers information, a three-dot animation signifies the loading process.  
-
+The website is a simple web application that aims to help with the organization of the festival "Rock am See". A countdown at the top displays the time remaining until the festival starts. Three further sections present information, events, and a list of volunteers who have registered for specific events. Via a dropdown menu, the volunteer list can be dynamically sorted by name or registration date in ascending or descending order. A fixed navigation bar allows quick access to all sections. During the data retrieval process, a three-dot animation signals the loading status.
 
 ## Folder Structure
 - home.html
@@ -14,23 +13,20 @@ On top of the site a countdown shows the time left until the festival starts. Th
 - festival.jpg
 - README.md
 
-
 ## How to Start/Use the Website
-1. Step: Download the folder.
-2. Step: If needed, unzip the folder.
-3. Step: Open the folder in your file explorer and click on the file "home.html" (this should open the file in the Browser. If not, right click on the file and the "open with" > your browser.)
-4. Step: Navigate through the one-pager via scrolling or jump to the needed section via the navigation bar. 
-5. Step: Enjoy! 😊
-
+1. Download the folder.
+2. If needed, unzip the folder.
+3. Open the folder and double-click home.html to open it in your browser. (If it doesn't open, right-click > "Open with" > select your browser).
+4. Navigate through the page via scrolling or by using the navigation bar.
+5. 5. Enjoy! 😊
 
 ## Used Resources
 - API: https://randomuser.me/api/?results=30&seed=a
 - Code Sandbox: https://codesandbox.io/p/sandbox/luoos 
 - Documentation of Date() Constructor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
 
-
 ## Testing
-The application was tested on
+The application was tested on:
 - Brave Browser
 - Firefox
 - Chrome
