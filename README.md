@@ -2,7 +2,7 @@
 
 ### Project Preview
 
-| **Countdown & Info** | **Event Selection** | **Volunteer List** |
+| **Info** | **Event Selection** | **Volunteer List** |
 | :---: | :---: | :---: |
 | <img src="./2.1-screenshot.png" width="300"/> | <img src="./2.2-screenshot.png" width="300"/> | <img src="./2.3-screenshot.png" width="300"/> |
 
