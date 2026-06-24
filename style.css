@@ -1,0 +1,309 @@
+/* Smoothes Scrollen bei Sprung-Links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styling des Bodys */
+body {
+  margin: 0;
+  text-align: center;
+  background-attachment: fixed;
+  background-color: #e2f1f8;
+  background-image: url("festival.jpg");
+  background-repeat: no-repeat;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+/* h1 Überschrift */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 30px 0 0 0;
+}
+
+/* h2 Überschrift */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 8px 0 20px;
+}
+
+/* h3 Überschrift */
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: -12px 0 6px 0;
+}
+
+/* Navbar */
+.topnav {
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-color: #F2B90F;
+  z-index: 1000;
+}
+
+/* Links in der Navbar */
+.topnav a {
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hover-Effekt für Links */
+.topnav a:hover {
+  background-color: #F2CC0F;
+  color: white;
+}
+
+/* Main-Abschnitt */
+main {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+/* Section-Boxen */
+.section {
+  background-color: #208C81;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  scroll-margin-top: 60px; /* Höhe der fixen Navbar */
+}
+
+
+/* --------------------------------------------------- COUNTDOWN ------------------------------------------------------- */
+/* Container für Countdown */
+#countdown {
+  margin: 22px auto 0 auto;
+  padding: 10px 10px 20px 10px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Styling der Countdown-Zahlen (days, hours, minutes, seconds) */
+#count span {
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+#countdown p {
+  margin: 0 10px;
+}
+
+
+/* --------------------------------------------------- INFORMATION-TEIL ------------------------------------------------------- */
+/* Akkordeon-Elemente */
+.collapsible {
+  margin: 0 0 -5px 0;
+}
+
+/* Button zum Aufklappen */
+.collapsible-btn {
+  background-color: #208C81;
+  border: none;
+  width: 30%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+/* Inhalt im Akkordeon */
+.collapsible p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin: 2px 0 20px 0;
+}
+
+/* Akkordeon Inhalt zunächst verstecken */
+.collapsible-content {
+  display: none;
+}
+
+/* Akkordeon Inhalt wenn offen */
+.collapsible-content.open {
+  display: block;
+}
+
+
+/* --------------------------------------------------- TABELLE ------------------------------------------------------- */
+/* Tabelle "Veranstaltungen" */
+.event-table {
+  width: 80%;
+  max-width: 100%;
+  margin: 27px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  table-layout: auto;
+  border-radius: 10px;
+}
+
+/* Tabellen-Header und Table-Zellen */
+.event-table th,
+.event-table td {
+  border: 1px solid;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: top;
+  background: white;
+  overflow-wrap: break-word;    /* Wortumbruch */
+  white-space: normal;          /* Normaler Zeilenumbruch */
+}
+
+/* Tabellen-Header */
+.event-table th {
+  background-color: #F2B90F;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* --------------------------------------------------- HELFER:INNEN ------------------------------------------------------- */
+/* Abstand unter dem Sortieren Dropdown */
+.sort-select {
+  margin-bottom: 10px;
+}
+
+/* --------------------------- CSS-"Ladebalken": Three Dots Animation ------------------------- */
+/* Ladebalken (Animation mit drei Punkten) */
+:root {
+  --three-dots__size: 100px;
+  --three-dots__color: #F2B90F;
+  --three-dots__dot-diameter: calc(var(--three-dots__size) / 5);
+  --three-dots__dot-left-margin: calc(var(--three-dots__dot-diameter) / 2);
+  --three-dots__duration: 1.2s;
+}
+
+/* Keyframe Animation für Pulsieren der Punkte */
+@keyframes three-dots__bounce {
+
+  0%, 80%, 100% {
+    transform: scale(0);    /* Klein, unsichtbar */
+    opacity: 0.3;
+  }
+
+  40% {
+    transform: scale(1);    /* Groß, sichtbar */
+    opacity: 1;
+  }
+}
+
+/* Container für Ladeanimation */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--three-dots__dot-left-margin);
+  width: var(--three-dots__size);
+  height: var(--three-dots__dot-diameter);
+  margin: 2rem auto;
+}
+
+/* Einzelne Punkte der Animation */
+.loader div {
+  width: var(--three-dots__dot-diameter);
+  height: var(--three-dots__dot-diameter);
+  background-color: var(--three-dots__color);
+  border-radius: 50%;
+  animation: three-dots__bounce var(--three-dots__duration) infinite ease-in-out;
+}
+
+/* Verzögerungen für die einzelnen Punkte, damit nacheinander pulsieren */
+.loader div:nth-child(1) {
+  animation-delay: -0.24s;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: -0.12s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: 0;
+}
+
+
+/* --------------------------------------------------- HELPER-CARDS ------------------------------------------------------- */
+.helper-card {
+  background-color: #F2F2F2;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 40%;
+  margin: 10px auto;
+}
+
+/* Helfer:innen Bilder */
+.helper-card img {
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+
+/* --------------------------------------------------- RESPONSIVE-DESIGN ------------------------------------------------------- */
+/* --------------------------- Responsive Design: Mobile Version ------------------------- */
+@media (min-width: 360px) and (max-width: 599px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 4px 0 20px 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: -10px 0 6px 0;
+  }
+    
+  .collapsible-btn {
+    width: 50%;
+  }
+
+  .event-table {
+    width: 70%;
+    font-size: 11px;
+  }
+
+  .helper-card {
+    width: 75%;
+    font-size: 12px;
+  }
+}
+
+
+/* --------------------------- Responsive Design: Desktop Version ------------------------- */
+@media (min-width: 600px) {
+  .event-table th:first-child,
+  .event-table th:nth-child(3),
+  .event-table td:nth-child(3) {
+    width: auto;
+    min-width: 60px;
+    max-width: 90px;
+  }
+
+  .helper-card {
+    width: 75%;
+    font-size: 16px;
+  }
+}
