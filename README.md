@@ -1,11 +1,10 @@
 # T02 Single-Page-Application for Festival Organization (Web Technologies)
 
 ### Project Preview
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="./2.1-screenshot.png" alt="Information" width="300"/>
-  <img src="./2.2-screenshot.png" alt="Events" width="300"/>
-  <img src="./2.3-screenshot.png" alt="Helpers" width="300"/>
-</div>
+
+| **Countdown & Info** | **Event Selection** | **Volunteer List** |
+| :---: | :---: | :---: |
+| <img src="./2.1-screenshot.png" width="300"/> | <img src="./2.2-screenshot.png" width="300"/> | <img src="./2.3-screenshot.png" width="300"/> |
 
 ## Context
 This project was developed as the second milestone within the "Web Technologies" module at my university. The objective was to transition from static web pages to a dynamic Single-Page-Application (SPA). The focus was on implementing client-side logic using JavaScript, handling API requests (fetching data), and manipulating the DOM to create an interactive user experience.
