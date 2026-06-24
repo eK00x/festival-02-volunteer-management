@@ -18,7 +18,7 @@ The website is a simple web application that aims to help with the organization 
 2. If needed, unzip the folder.
 3. Open the folder and double-click home.html to open it in your browser. (If it doesn't open, right-click > "Open with" > select your browser).
 4. Navigate through the page via scrolling or by using the navigation bar.
-5. 5. Enjoy! 😊
+5. Enjoy! 😊
 
 ## Used Resources
 - API: https://randomuser.me/api/?results=30&seed=a
@@ -26,7 +26,4 @@ The website is a simple web application that aims to help with the organization 
 - Documentation of Date() Constructor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
 
 ## Testing
-The application was tested on:
-- Brave Browser
-- Firefox
-- Chrome
+The application was tested on Brave Browser, Firefox, and Chrome.
